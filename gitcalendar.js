@@ -254,8 +254,8 @@ function GitCalendarInit(git_gitapiurl, git_color, git_user) {
         var html = '';
         html += `<div id="git_tooltip_container"></div>
                         <div class="contrib-footer clearfix mt-1 mx-3 px-3 pb-1">
-                          <div class="float-left text-gray">???
-                            <a href="https://github.com/" target="blank"></a>
+                          <div class="float-left text-gray">color
+                            <a href="https://github.com/${color[2]}" target="blank">@${color[2]}</a>
                           </div>
                           <div class="contrib-legend text-gray">Less
                             <ul class="legend">
