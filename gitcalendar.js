@@ -250,12 +250,13 @@ function GitCalendarInit(git_gitapiurl, git_color, git_user) {
                               </canvas>
                             </div>`;
         return html
-      var git_info_box = (color) => {
+      };
+      var git_info_box = (user, color) => {
         var html = '';
         html += `<div id="git_tooltip_container"></div>
                         <div class="contrib-footer clearfix mt-1 mx-3 px-3 pb-1">
-                          <div class="float-left text-gray">color
-                            <a href="https://github.com/${color[2]}" target="blank">@${color[2]}</a>
+                          <div class="float-left text-gray">数据来源
+                            <a href="https://github.com/${user}" target="blank">@${user}</a>
                           </div>
                           <div class="contrib-legend text-gray">Less
                             <ul class="legend">
